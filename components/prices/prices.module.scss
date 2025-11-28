@@ -1,0 +1,434 @@
+@use "../../theme/main" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container p {
+  font-family: IRANSansFarsi !important;
+}
+
+.container span {
+  font-family: IRANSansFarsi !important;
+}
+
+.firstContainer {
+  display: flex;
+  width: 90%;
+  flex-direction: row-reverse;
+  margin: 4rem 0 1rem 0;
+  // padding: 0 3rem;
+  align-self: center;
+}
+
+.selectTag {
+  width: 200px !important;
+  height: 40px;
+  text-align: right;
+  direction: rtl;
+  padding: 4px;
+  border-radius: 8px;
+
+  background-color: $secondaryColor;
+  border: none;
+}
+
+.selectTagDark {
+  width: 200px !important;
+  height: 40px;
+  border: none;
+  text-align: right;
+  direction: rtl;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: $secondaryColorDark;
+  color: $textColorDark2;
+  background-color: $secondaryColorDark;
+  border: none;
+}
+
+.selectTag::-ms-expand {
+  display: none;
+}
+
+.priceH3 {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+  font-size: 24px;
+}
+
+.priceH3Dark {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+  font-size: 24px;
+  color: $textColorDark;
+}
+
+.unOrderedList {
+  padding: 0;
+  display: flex;
+  align-self: center;
+  width: 90%;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.unOrderedListDark {
+  padding: 0;
+  display: flex;
+  align-self: center;
+  width: 90%;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-self: center;
+}
+
+.liTag {
+  border: none;
+  background-color: $secondaryColor;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.liTag:focus {
+  background-color: $greenBtn;
+  color: $textColorDark2;
+  border-radius: 8px;
+  outline: none;
+}
+
+.unOrderedList button:focus {
+  background-color: $greenBtn;
+  color: $textColorDark2;
+  border-radius: 8px;
+  outline: none;
+}
+
+.liTagDark {
+  border: none;
+  background-color: $primaryColorDark;
+  color: $textColorDark;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.liTagDark:focus {
+  background-color: $secondaryColorDark;
+  border-radius: 8px;
+  outline: none;
+}
+
+.carouselEachContainer {
+  background-color: $primaryColor;
+  display: flex;
+}
+
+.forwardFlash {
+  color: $thirdColorDark;
+}
+
+.forwardFlashDark {
+  color: $primaryColor;
+}
+
+.carouselContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 3rem 0;
+  transition: all 0.2s ease;
+  align-self: center;
+  align-items: center;
+}
+
+.eachContainer {
+  width: 100%;
+  height: 80px;
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  z-index: 222222;
+}
+.icon:focus {
+  background: $primaryColor;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.eachContainerDark {
+  width: 100%;
+  height: 60px;
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 0;
+}
+
+.arrowContainer {
+  width: 40px;
+  height: 40px;
+  border: 1px solid silver;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: $primaryColor;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.arrowContainer:hover {
+  background-color: #c1c1c1;
+}
+
+.arrowContainerDark {
+  width: 40px;
+  height: 40px;
+  border: none;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: $secondaryColorDark;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.arrowContainerDark:hover {
+  background-color: $thirdColorDark;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.myCarouselContainer {
+  display: flex;
+  width: 90%;
+  overflow-x: auto;
+  margin: 0 1rem;
+  scroll-behavior: smooth;
+  direction: rtl;
+  height: max-content;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.myCarouselContainerDark {
+  display: flex;
+  width: 90%;
+  overflow-x: auto;
+  margin: 0 1rem;
+  scroll-behavior: smooth;
+  align-items: center;
+  padding: 0;
+  direction: rtl;
+  align-items: center;
+  height: max-content;
+  padding: 0.5rem;
+}
+
+.coinContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70% !important;
+
+  border: none;
+  height: 60px;
+}
+
+.coinContainer:focus {
+  background-color: red;
+}
+
+.coinDataContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.brokerageNameDark {
+  color: $primaryColor;
+  margin: 0 0 5px 0;
+}
+
+.coinDataContainerDark {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.coinDataContainerDark span {
+  color: $primaryColor;
+  font-size: small;
+}
+.redPercentage {
+  color: $chartRedLineColor !important;
+  direction: ltr;
+}
+
+.greenPercentage {
+  color: $greenBtn !important;
+  direction: ltr;
+}
+
+.eachCoinBtn {
+  background-color: $secondaryColor;
+  border: none;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin: 0.5rem 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.eachCoinBtnDark {
+  background-color: $secondaryColorDark;
+  border: none;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin: 0.5rem 0.5rem;
+  border-radius: 16px;
+  height: 100%;
+}
+
+.eachCoinBtn:focus-within {
+  background: $primaryColor;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  outline: none;
+}
+
+.coinContainer:focus {
+  background: $primaryColor;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.brokerageName {
+  margin: 10px;
+}
+
+.brokerageNameDark {
+  margin: 10px;
+}
+
+.firstRowContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  width: 100%;
+  align-items: center;
+}
+
+.saveBtn {
+  border: none;
+  background-color: inherit;
+  width: max-content;
+  height: max-content;
+  text-align: left;
+  cursor: pointer;
+}
+
+.saveBtnDark {
+  border: none;
+  background-color: inherit;
+  width: max-content;
+  height: max-content;
+  text-align: left;
+  cursor: pointer;
+  color: $primaryColor;
+}
+
+.search {
+  width: 200px;
+  height: 40px;
+  border: none;
+  text-align: right;
+  padding: 8px;
+  border-radius: 0.5rem;
+  background-color: $secondaryColor;
+  margin-bottom: 1rem;
+  outline: none;
+  direction: rtl;
+}
+
+.searchDark {
+  width: 200px;
+  height: 40px;
+  border: none;
+  text-align: right;
+  padding: 8px;
+  border-radius: 0.5rem;
+  background-color: $secondaryColorDark;
+  margin-bottom: 1rem;
+  outline: none;
+  direction: rtl;
+}
+
+.chartBtn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: red;
+  font-size: small;
+}
+
+.chartBtn:hover {
+  font-size: smaller;
+}
+
+.chartBtn:focus {
+  background-color: inherit;
+}
+
+@media (max-width: 425px) {
+  .eachCoinBtn {
+    font-size: small !important;
+    width: 100%;
+  }
+}

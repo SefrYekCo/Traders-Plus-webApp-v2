@@ -1,0 +1,185 @@
+.btn {
+  width: 100% !important;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.modalContainerDark {
+  width: 400px;
+  height: 300px;
+  background-color: #2A2E39;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #ffffff;
+  text-align: right;
+  direction: rtl;
+}
+
+.modalContainer {
+  width: 400px;
+  height: 300px;
+  background-color: #E5F4EF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: right;
+  direction: rtl;
+}
+
+.container input::placeholder {
+  margin-right: 5px;
+}
+
+.inputDark {
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #131722;
+  width: 50%;
+  height: 40px;
+  padding: 0.5rem;
+  align-self: center;
+}
+
+.inputDark::placeholder {
+  color: #2A2E39;
+}
+
+.input {
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #45B6A3;
+  width: 50%;
+  height: 40px;
+  padding: 0.5rem;
+  align-self: center;
+}
+
+.input::placeholder {
+  color: #C0E7E1;
+}
+
+.btnContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  height: 30%;
+}
+
+.btnContainerDark {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  height: 30%;
+}
+
+.btnContainer button:first-child {
+  border: none;
+  background-color: #45B6A3;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btnContainer button:first-child:hover {
+  background-color: #C0E7E1;
+}
+
+.btnContainer button:last-child {
+  border: none;
+  background-color: #E5F4EF;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btnContainer button:last-child:hover {
+  background-color: #45B6A3;
+}
+
+.btnContainerDark button:first-child {
+  border: none;
+  background-color: #131722;
+  color: #ffffff;
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnContainerDark button:first-child:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.35);
+}
+
+.btnContainerDark button:last-child {
+  border: none;
+  background-color: #2A2E39;
+  color: #ffffff;
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnContainerDark button:last-child:hover {
+  background-color: #131722;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 450px) {
+  .modalContainer {
+    width: 300px;
+  }
+  .modalContainerDark {
+    width: 300px;
+  }
+  .input {
+    width: 80%;
+  }
+  .inputDark {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=deleteBasketModal.module.css.map */

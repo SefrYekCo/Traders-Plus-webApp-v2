@@ -1,0 +1,117 @@
+.mainContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #C0E7E1;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.mainContainerDark {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #131722;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mainContainerDark > h1 {
+  color: #ffffff;
+}
+
+.card {
+  margin: 1rem 0;
+  background-color: #E5F4EF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  text-align: right;
+  width: 20%;
+  margin: 1rem;
+  height: 300px;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+}
+
+.card img {
+  border-radius: 0.5rem;
+}
+
+.card a {
+  color: blue;
+}
+
+.cardDark {
+  margin: 1rem 0;
+  background-color: #2A2E39;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  text-align: right;
+  height: 300px;
+  width: 20%;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.35);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  color: #D1D4DC;
+}
+
+.cardDark a {
+  color: skyblue;
+}
+
+.cardDark:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.cardDark image {
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 450px) {
+  .mainImagesContainer {
+    width: 100%;
+  }
+  .mainImagesContainerDark {
+    width: 100%;
+  }
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    overflow: hidden;
+    font-size: small;
+  }
+  .cardDark {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=services.module.css.map */

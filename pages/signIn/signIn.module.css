@@ -1,0 +1,137 @@
+.imageContainer {
+  width: 60% !important;
+}
+
+.formContainer {
+  width: 40% !important;
+  background-color: rgb(2, 2, 42) !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.imageContainer span {
+  width: 90% !important;
+  height: 90% !important;
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  50% {
+    margin-top: 1rem;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.formBox p {
+  color: #ffffff;
+}
+
+.formBox h1 {
+  color: #ffffff;
+}
+
+.formBox input {
+  color: #ffffff;
+}
+
+.formBox label {
+  color: #ffffff;
+}
+
+.formBox span {
+  color: #ffffff;
+}
+
+.formBox input::placeholder {
+  color: #ffffff;
+}
+
+.formBox input {
+  width: 98%;
+  border-radius: 8px;
+  background-color: rgb(2, 2, 42);
+  height: 40px;
+  margin: 1rem 0;
+  box-shadow: 0px 0px 10px 1px #2A2E39 inset;
+  border: none;
+  padding: 8px;
+  direction: rtl;
+  text-align: right;
+  transition: all 0.3s ease;
+}
+
+.formBox input:focus {
+  background-color: #1976d2;
+  width: 100%;
+  outline: none;
+  box-shadow: 0px 0px 10px 1px #2A2E39;
+}
+
+.formBox input::placeholder {
+  opacity: 0.5;
+}
+
+.innerFormContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeLink {
+  justify-content: center;
+}
+
+.homeLink a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.homeLink a:hover {
+  color: #1976d2;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    display: none;
+  }
+  .formContainer {
+    width: 100% !important;
+  }
+  .linksContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .linksContainer div {
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 1624px) {
+  .linksContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .linksContainer div {
+    margin: 0.5rem 0;
+  }
+}
+
+/*# sourceMappingURL=signIn.module.css.map */

@@ -1,0 +1,47 @@
+{
+  "name": "tradersplus",
+  "version": "1.4.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@date-io/date-fns-jalali": "2.16.0",
+    "@date-io/jalaali": "2.16.1",
+    "@emotion/react": "11.9.0",
+    "@emotion/styled": "11.8.1",
+    "@ijavad805/react-datepicker": "2.0.4",
+    "@mui/icons-material": "5.8.0",
+    "@mui/material": "5.7.0",
+    "@mui/styles": "5.7.0",
+    "@mui/x-data-grid": "5.12.3",
+    "@mui/x-date-pickers": "5.0.20",
+    "apexcharts": "3.35.3",
+    "axios": "0.27.2",
+    "chart.js": "3.8.0",
+    "date-fns-jalali": "2.13.0-0",
+    "dayjs": "1.11.7",
+    "firebase": "9.19.1",
+    "jalali-moment": "3.3.11",
+    "localforage": "1.10.0",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-apexcharts": "1.4.0",
+    "react-cookie": "4.1.1",
+    "react-dom": "18.1.0",
+    "react-jwt": "1.1.8",
+    "react-responsive-carousel": "3.2.23",
+    "react-toastify": "9.1.1",
+    "sharp": "0.31.3",
+    "swiper": "8.1.6",
+    "swr": "2.0.3",
+    "tinycolor2": "1.4.2"
+  },
+  "devDependencies": {
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6"
+  }
+}

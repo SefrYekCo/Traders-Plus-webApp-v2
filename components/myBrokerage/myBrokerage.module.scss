@@ -1,0 +1,310 @@
+
+@use "../../theme/main" as * ;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    align-items: center;
+    width: 100%;
+}
+
+.firstContainer{
+    display: flex !important;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.firstContainer h3{
+   margin: 0 1rem;
+   font-weight: lighter;
+   font-size: 16px;
+}
+
+.secondContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 3rem 0;
+    transition: all .2s ease;
+}
+
+.thirdContainer{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.eachContainer{
+    width: 160px;
+    height: 150px;
+    background-color:$secondaryColor ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 .8rem;
+    border: 1px solid #E1E1E3;
+    border-radius: 8px;
+}
+
+.eachContainerDark{
+    width: 160px;
+    height: 150px;
+    background-color:$secondaryColorDark ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 .8rem;
+    border:none;
+    border-radius: 8px
+}
+
+.link{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.arrowContainer{
+    width: 40px;
+    height: 40px;
+    border: 1px solid $hr;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: $textColorDark2;
+    transition: all .3s ease;
+}
+
+.arrowContainer:hover{
+    background-color: $hr;
+}
+
+.arrowContainerDark{
+    width: 40px;
+    height: 40px;
+    border: none;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: $secondaryColorDark;
+    transition: all .3s ease;
+    border-radius: 50%;
+}
+
+.arrowContainerDark span{
+    color: #ffffff;
+}
+
+.arrowContainerDark:hover{
+    background-color: $thirdColorDark;
+}
+
+.brokerageName{
+    color: $thirdColorDark;
+}
+
+.brokerageNameDark{
+    color: $textColorDark2;
+}
+
+.lineDark{
+    color: $thirdColorDark;
+}
+
+.line{
+    color: $textColorDark2;
+}
+
+.myCarouselContainer{
+    display: flex;
+    width: 90%;
+    overflow-x: auto;
+    margin: 0 1rem;
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+.myCarouselContainerDark{
+    display: flex;
+    width: 90%;
+    overflow-x: auto;
+    margin: 0 1rem;
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+.searchInput{
+    width: 15%;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 16px;
+    text-align: right;
+    direction: rtl;
+    background-color: $secondaryColor;
+    font-weight: bold;
+    color: $thirdColorDark;
+    margin-top: 1rem;
+    outline: none;
+}
+
+.searchInput:focus{
+    border: none;
+}
+
+.searchInputDark{
+    width: 15%;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 16px;
+    text-align: right;
+    direction: rtl;
+    background-color: $secondaryColorDark;
+    font-weight: bold;
+    color: $textColorDark;
+    margin-top: 1rem;
+    outline: none;
+}
+
+.pinImgContainer{
+    padding: .3rem;
+    width: 20%;
+    background-color: $thirdColor;
+    align-self: flex-start;
+    border-radius: 0 0 0 8px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.pinImgContainer:hover{
+    width: 50%;
+}
+
+.redPinImgContainer{
+    padding: .3rem;
+    width: 20%;
+    background-color: $chartRedLineColor;
+    align-self: flex-start;
+    border-radius: 0 0 0 8px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.redPinImgContainer:hover{
+    width: 50%;
+}
+
+.searchIcon{
+
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all .2s ease;
+}
+
+.searchIconDark{
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all .2s ease;
+    color: $textColorDark2 !important;
+}
+
+.searchIcon:hover{
+    font-size: xx-large;
+}
+
+.searchIconDark:hover{
+    font-size: xx-large;
+}
+
+
+.h3TagDark{
+    color: $textColorDark;
+}
+
+.Swiper{
+    margin-top:"2rem" !important ;
+    width:"60%" !important
+}
+
+@media (max-width: 768px) {
+    .seperationLine {
+        display: none;
+    }
+
+    .eachContainer{
+        width: 120px;
+    }
+    .eachContainerDark{
+        width: 120px;
+    }
+    .Swiper{
+        margin-top:"2rem" ;
+        width:"100%"
+    }
+    .searchInputDark{
+        width: 30%;
+    }
+    .searchInput{
+        width: 30%;
+    }
+}
+
+@media (max-width: 575px) {
+    .seperationLine {
+        display: none;
+    }
+
+    .eachContainer{
+        width: 120px;
+    }
+    .eachContainerDark{
+        width: 120px;
+    }
+    .Swiper{
+        margin-top:"2rem" ;
+        width:"100%"
+    }
+
+    .searchIcon{
+        display: none;
+    }
+
+    .searchIconDark{
+        display: none;
+    }
+
+    .h3TagDark{
+        width: 250px;
+        text-align: center;
+    }
+
+    .h3Tag{
+        width: 250px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .searchInput {
+        width: 70%;
+        border-radius: .5rem;
+        font-weight: lighter;
+    }
+
+    .brokerageName {
+        font-size: small;
+    }
+}

@@ -1,0 +1,171 @@
+.drawerContainer {
+  display: flex;
+}
+
+.boxDrawerDark {
+  width: 200px;
+  height: 100%;
+  background-color: #2A2E39;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.boxDrawer {
+  width: 200px;
+  height: 100%;
+  background-color: #F4F6FA;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  direction: rtl;
+  text-align: right;
+  height: 40%;
+  justify-content: space-around;
+}
+
+.ul a {
+  transition: all 0.3s ease;
+  color: #787B7C;
+}
+
+.ul a:hover {
+  color: #000;
+}
+
+.ulDark {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  direction: rtl;
+  text-align: right;
+  height: 30%;
+  justify-content: space-around;
+}
+
+.themeContainer {
+  display: none;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuIcon {
+  display: none !important;
+}
+
+.menuIconDark {
+  display: none !important;
+}
+
+.btn {
+  margin-left: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #45B6A3;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #45B6A3;
+}
+
+.btnDark {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #131722;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+
+.btnDark:hover {
+  background-color: #2A2E39;
+}
+
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block !important;
+    align-self: center;
+  }
+  .menuIconDark {
+    display: block !important;
+    color: #ffffff;
+    align-self: center;
+  }
+  .cancelIcon {
+    display: block;
+    align-self: center;
+  }
+  .iconsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cancelIconDark {
+    display: block;
+    align-self: center;
+  }
+}
+@media (max-width: 425px) {
+  .menuIcon {
+    display: block !important;
+    align-self: center;
+  }
+  .menuIconDark {
+    display: block !important;
+    color: #ffffff;
+    align-self: center;
+  }
+  .cancelIcon {
+    display: block !important;
+    align-self: center;
+  }
+  .iconsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cancelIconDark {
+    display: block !important;
+    color: #ffffff;
+    align-self: center;
+  }
+  .themeContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=drawer.module.css.map */

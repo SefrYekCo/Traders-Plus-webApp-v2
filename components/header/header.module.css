@@ -1,0 +1,247 @@
+.container {
+  background-color: #F4F6FA;
+  height: 4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: height 0.5s ease, opacity 0.5s;
+  z-index: 999;
+}
+
+.containerDark {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  padding: 10px;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background-color: #131722;
+}
+
+.linksContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.linksContainerDark {
+  width: 40%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 20% !important;
+  align-items: center;
+}
+
+.btn {
+  margin-left: 1rem;
+  width: 60%;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #45B6A3;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #45B6A3;
+}
+
+.btnDark {
+  margin-left: 1rem;
+  width: 60%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+}
+
+.btnDark:hover {
+  background-color: #131722;
+}
+
+.profileImageContainer {
+  display: flex;
+  width: 15%;
+  height: 80%;
+  justify-content: space-between;
+}
+
+.profileImageContainer img:hover {
+  transform: rotate(-90deg);
+}
+
+.profileImageContainer img {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profileImageContainer img:hover {
+  transform: rotate(30%);
+}
+
+.signInLink {
+  color: #ffffff;
+}
+
+.signUpLink {
+  color: #ffffff;
+}
+
+.signInLink:hover {
+  color: #D1D4DC;
+}
+
+.signUpLink:hover {
+  color: #D1D4DC;
+}
+
+.linksContainer a {
+  font-size: 14px;
+  color: #787B7C;
+  transition: all 0.3s ease;
+}
+
+.linksContainer a:hover {
+  color: #000000;
+}
+
+.searchInput {
+  direction: rtl;
+  text-align: right;
+  border: none;
+  border-radius: 50px;
+  background-color: #F4F6FA;
+  width: 14%;
+  padding: 1rem;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchInputDark {
+  direction: rtl;
+  text-align: right;
+  border: none;
+  border-radius: 50px;
+  background-color: #2A2E39;
+  width: 14%;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+.searchInputDark:focus {
+  outline: none;
+}
+
+.searchInputDark::placeholder {
+  color: #787B7C;
+}
+
+.themeContainer {
+  align-items: center;
+  justify-content: space-around;
+  width: 6%;
+  margin: 0 10px;
+  display: flex;
+}
+
+.links {
+  color: #000000;
+}
+
+.linksDark {
+  color: #D1D4DC;
+}
+
+.linksContainerDark a {
+  color: #D1D4DC;
+}
+
+.tradersPlusDark {
+  color: #D1D4DC;
+}
+
+.CurrencyExchangeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 5%;
+  height: 100%;
+}
+
+.changeIcon {
+  cursor: pointer;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.menuIconDark {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .linksContainer {
+    display: none;
+  }
+  .linksContainerDark {
+    display: none;
+  }
+  .searchInput {
+    display: none;
+  }
+  .searchInputDark {
+    display: none;
+  }
+  .themeContainer {
+    width: 12%;
+  }
+  .tradersPlusDark {
+    display: none;
+  }
+  .tradersPlus {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+    align-self: center;
+  }
+  .menuIconDark {
+    display: block;
+    color: #ffffff;
+    align-self: center;
+  }
+  .themeContainer {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .btnDark {
+    display: none;
+  }
+  .profileImageContainer img {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=header.module.css.map */

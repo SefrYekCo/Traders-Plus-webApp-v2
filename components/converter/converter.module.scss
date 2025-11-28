@@ -1,0 +1,265 @@
+
+@use "../../theme/main" as *;
+
+.firstMainContainerDark{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color:$primaryColorDark ;
+    align-items: center;
+}
+
+.firstMainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: $primaryColor ;
+    align-items: center;
+}
+
+.mainContainer{
+    width: 50%;
+    align-self: center;
+    background-color:$secondaryColor;
+    border-radius: 16px;
+    height: 86%; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.mainContainerDark{
+    width: 50%;
+    align-self: center;
+    background-color:$secondaryColorDark;
+    border-radius: 16px;
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.firstContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+
+.secondContainer{
+    width: 80%;
+    align-self: center;
+    border: none;
+    border-radius: 16px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 12%;
+    background-color:$thirdColor ;
+}
+
+
+
+.secondContainerDark{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20%;
+    background-color:$secondaryColorDark;
+}
+
+.btn{
+    background-color: inherit;
+    color:$thirdColorDark;
+    width: 25%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn:focus{
+    background-color: $forthColor;
+    color: $selectOptionColor;
+}
+
+
+.btnDark{
+    background-color: $secondaryColorDark;
+    color:$textColorDark;
+    width: max-content;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnDark:focus{
+    color: $selectOptionColor;
+    background-color: $primaryColorDark;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+}
+
+.thirdContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    flex-direction: row-reverse;
+}
+
+.teterContainer{
+    width: 30%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pTagDark {
+    font-size: small;
+    color: $textColorDark2;
+}
+
+.pTag{
+    font-size: small;
+    color: $thirdColorDark;
+}
+
+.bitcoinContainer{
+    width: 30%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cryptoImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.selectTag{
+    width: 130px;
+    height: 40px;
+    direction: rtl;
+    text-align: right;
+    background-color: $forthColor;
+    padding: 0 .5rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.selectTagDark{
+    width: 130px;
+    height: 40px;
+    direction: rtl;
+    text-align: right;
+    background-color: #131722;
+    color:$textColorDark2 ;
+    padding: 0 .5rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.CurrencyExchangeBtn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 5%;
+    height:100% ;
+}
+
+.changeIcon{
+    cursor: pointer;
+}
+
+.firstpTagDark{
+    color: #fff;
+}
+
+.bitcoinContainer span{
+    width: 100px !important;
+    height: 100px !important;
+    
+}
+
+.teterContainer span{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+
+@media (max-width: 768px) {
+    .mainContainer{
+        width: 90%;
+
+    }
+    .mainContainerDark{
+        width: 90%;
+        
+    }
+}
+
+@media (max-width: 425px) {
+    .mainContainer{
+        width: 90%;
+
+    }
+    .mainContainerDark{
+        width: 90%;
+    }
+
+    .secondContainer{
+        width: 100%;
+    }
+
+    .secondContainerDark{
+        width: 100%;
+    }
+
+    .thirdContainer span {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .bitcoinContainer span{
+        width: 50px !important;
+        height: 50px !important;
+        
+    }
+
+    .teterContainer span{
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .bitcoinContainer select{
+        width: 100px;
+    }
+
+    .teterContainer select{
+        width: 100px;
+    }
+
+    .mainContainer{
+        padding: 0;
+    }
+
+    .secondContainer{
+        border-radius: 0;
+    }
+
+    .secondContainerDark{
+        border-radius: 0px !important;
+    }
+
+}

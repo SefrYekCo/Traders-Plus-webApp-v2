@@ -1,0 +1,195 @@
+
+@use "../../theme/main" as *;
+
+.drawerContainer{
+display: flex;
+
+}
+
+.boxDrawerDark{
+    width: 200px;
+    height: 100%;
+    background-color: $secondaryColorDark;
+    color: $textColorDark2;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+
+.boxDrawer{
+    width: 200px;
+    height: 100%;
+    background-color: $secondaryColor;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+
+}
+
+.ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    height: 40%;
+    justify-content: space-around;
+
+}
+
+.ul a {
+    transition: all .3s ease;
+    color: #787B7C;
+}
+
+.ul a:hover {
+    color: #000;
+}
+
+.ulDark{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    height: 30%;
+    justify-content: space-around;
+
+}
+
+.themeContainer{
+    display: none;
+}
+
+.iconsContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menuIcon{
+    display: none !important;
+  }
+  
+.menuIconDark{
+    display: none !important;
+ }
+
+ .btn{
+    margin-left: 1rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $greenBtn;
+    border-radius: 8px;
+    color: $textColorDark2;
+    margin-top: 1rem;
+}
+
+.btn:hover{
+    background-color: $greenBtn;
+}
+
+.btnDark{
+    margin-top: .5rem;
+    margin-left: 1rem;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: $primaryColorDark;
+    border-radius: .5rem;
+    color: $textColorDark2;
+}
+
+.btnDark:hover{
+    background-color: $secondaryColorDark;
+}
+
+@media (max-width: 768px) {
+
+    .menuIcon{
+        display: block !important;
+        align-self: center;
+    }
+
+    .menuIconDark{
+        display: block !important;
+        color: $textColorDark2;
+        align-self: center;
+    }
+
+    .cancelIcon{
+        display: block;
+       align-self: center;
+    }
+
+    .iconsContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cancelIconDark{
+        display: block;
+      
+        align-self: center;
+    }
+
+ 
+}
+
+
+@media (max-width: 425px) {
+
+    .menuIcon{
+        display: block !important;
+        align-self: center;
+    }
+
+    .menuIconDark{
+        display: block !important;
+        color: $textColorDark2;
+        align-self: center;
+    }
+
+    .cancelIcon{
+        display: block !important;
+       align-self: center;
+    }
+
+    .iconsContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cancelIconDark{
+        display: block !important;
+        color: $textColorDark2;
+        align-self: center;
+    }
+
+    .themeContainer{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

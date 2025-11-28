@@ -1,0 +1,89 @@
+.mainContainer {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #E5F4EF;
+  display: flex;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  background-color: #C0E7E1;
+  min-height: 300px;
+  border-radius: 1rem;
+  direction: rtl;
+  padding: 0 2rem;
+}
+
+.container h2 {
+  color: green;
+}
+
+.container > p {
+  color: #1A8D5F;
+}
+
+.typesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250px;
+  width: 250px;
+  margin: 1rem;
+  direction: rtl;
+  transition: all 0.3s ease;
+  background-color: #E5F4EF;
+  padding: 1rem;
+  border-radius: 1rem !important;
+}
+
+.card button {
+  background-color: #FF7276;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+
+.card button:hover {
+  background-color: #E5F4EF;
+  color: #FF7276;
+}
+
+.cardContent {
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardContent p {
+  margin: 0.4rem 0;
+}
+
+.description {
+  font-family: IRANSansFarsi !important;
+}
+
+@media (max-width: 450px) {
+  .container {
+    margin-bottom: 2rem;
+  }
+  .typesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=plan.module.css.map */

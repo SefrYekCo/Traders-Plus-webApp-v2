@@ -1,0 +1,39 @@
+
+@use "../../theme/main" as *;
+
+.table{
+    background-color: $primaryColor;
+    border: none !important;
+    overflow-y: auto;
+
+}
+
+.tableDark{
+    background-color: $secondaryColorDark;
+
+}
+
+.tableContainer{
+    width:80% !important;
+    align-self: center;
+    max-height: 500px;
+}
+
+.tableHeader{
+    background-color: $secondaryColor;
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+}
+
+.mainContainer{
+    height: 550px;
+    width: 80%;
+    align-self:center;
+    overflow-x:auto ;
+    direction:rtl ;
+    margin-bottom:2rem; 
+    border-radius: 10px 10px 16px 16px;
+    
+}

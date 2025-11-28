@@ -1,0 +1,242 @@
+
+@use "../../theme/main" as *;
+
+.mainContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mainContainerDark {
+    background-color: $primaryColorDark;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 50%;
+    align-self: center;
+    background-color: $secondaryColor;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.containerDark {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 50%;
+    align-self: center;
+    background-color: $secondaryColorDark;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.imageContainer{
+    position: relative;
+    width: 30%;
+}
+
+.imageContainer img{
+    border-radius: 1rem;
+}
+
+.informationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 90%;
+    align-self: center;
+    margin-right: 2rem;
+    direction: rtl;
+    align-items: flex-start;
+}
+
+.informationContainer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.informationContainer input {
+    border: none;
+    border: .5rem;
+    padding: .5rem;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.08) inset;
+    border-radius: .5rem;
+}
+
+.informationContainerDark {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 90%;
+    align-self: center;
+    margin-right: 2rem;
+    direction: rtl;
+    align-items: flex-start;
+}
+
+.informationContainerDark div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.informationContainerDark input {
+    border: none;
+    border: .5rem;
+    padding: .5rem;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.08) inset;
+    border-radius: .5rem;
+    outline: none;
+   
+}
+
+.informationContainerDark input {
+    color: $textColorDark;
+}
+
+.informationContainerDark h3 {
+    color: $textColorDark;
+}
+
+.btnContainer{
+    margin: 1rem 0;
+   
+    justify-self: flex-end !important;
+}
+
+.btnContainer button{
+    padding: .5rem;
+    color: $greenBtn;
+}
+
+.btnContainer button:hover{
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.plansContainer{
+    width: 30%;
+    height: 100% !important;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    overflow: auto;
+}
+
+.plansContainerDark{
+    width: 30%;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100% !important;
+    overflow: auto;
+}
+
+.plansContainerDark h3{
+    color: $textColorDark;
+}
+
+.plansContainerDark a{
+    color: skyblue !important;
+}
+
+.alert{
+    opacity: .5;
+}
+
+.noPlanContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.noPlanContainer a{
+    color: blue;
+    transition: all .3s ease;
+}
+
+.noPlanContainer a:hover{
+    font-size: large;
+}
+
+.submitBtn {
+    color: $greenBtn !important;
+  }
+  
+  .submitBtn:hover {
+    background-color: $greenBtn !important;
+    color: #fff !important;
+  
+  }
+
+  .showPlansDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    align-items: center;
+    border: .5px solid grey;
+    margin: 0 0 2rem 0;
+  }
+
+  .showPlansDetailsContainer p {
+    font-family:IRANSansFarsi !important ;
+  }
+
+
+  @media (max-width:425px) {
+        .container {
+            flex-direction: column;
+            height: 80vh !important;
+            margin-top: 5rem;
+            justify-content: space-between;
+        }
+        .container div{
+            width: 100%;
+        }
+
+        .informationContainer {
+            margin: 0;
+        }
+
+        .informationContainer h3 {
+            font-size: small;
+        }
+
+        .informationContainer input {
+            width: 60%;
+        }
+        .imageContainer {
+            width: 90%;
+            height: 60%;
+        }
+
+        .plansContainer{
+            height: 50%;
+        }
+  }
