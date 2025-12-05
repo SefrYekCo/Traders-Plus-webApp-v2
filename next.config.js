@@ -29,7 +29,7 @@ const nextConfig = {
     ]
   },
   images:{
-    domains:["tradersplus-qa.sefryek.com" ,"s2.coinmarketcap.com" ,"pay-qa.digihyper.com" ,"pay.digihyper.com" ,"api.traderzplus.ir","s3.us-east-2.amazonaws.com" ,"nomics-api.s3.us-east-2.amazonaws.com" ,"drsho1.ir" ,"app.akharinkhabar.ir" ,"media.fardayeeghtesad.com" ,"localhost"]
+    domains:["tradersplus-qa.sefryek.com" ,"s2.coinmarketcap.com" ,"pay-qa.digihyper.com" ,"pay.digihyper.com" ,"apinew.traderzplus.ir","s3.us-east-2.amazonaws.com" ,"nomics-api.s3.us-east-2.amazonaws.com" ,"drsho1.ir" ,"app.akharinkhabar.ir" ,"media.fardayeeghtesad.com" ,"localhost"]
   },
 
 }
