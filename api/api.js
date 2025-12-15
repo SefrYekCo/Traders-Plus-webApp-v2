@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // export const baseURL = process.env.APP_ENV === "production" ? 'https://api.traderzplus.ir/api/v1' : 'http://tradersplus-qa.sefryek.com:5000/api/v1';
-export const baseURL = 'https://apinew.traderzplus.ir/api/v1'
+export const baseURL = 'https://api.traderzplus.ir/api/v1'
 // http://tradersplus-qa.sefryek.com:5000/api/v1
 // http://localhost:5000/api/v1
 //const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTQxOTIwNzMxMjg3ZTUyZWFlZDNiOWMiLCJtb2JpbGVOdW1iZXIiOiIwOTM2NzIzMTMzNyIsImlzcyI6InRyYWRlcnNwbHVzIiwiZXhwIjoxMjAwMDAwMDAwMDAwLCJpYXQiOjE2NDcyMTE5ODB9.mT7iXSLt0_sTcZCFDYz_koYtDu26ddnbNDt_aKkMQAM'
